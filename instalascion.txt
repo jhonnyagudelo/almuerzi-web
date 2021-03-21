@@ -1,0 +1,18 @@
+Usu e instalacion de vercel
+
+1. npm i -g vercel
+2. vercel init
+3. custom-build
+4. crear usuario
+5. llamar desde el aplicativo
+----------------------------------------------------------------------------------
+INSTALANDO DEPENDENCIA Y CONECTANDOSE A MONGO ALTAS
+1. npm i -S express mongoose body-parse cors
+			A. mongoose: es la libreria para conectar a mongoDB
+			B. body-parse: toma las peticiones que hagan al servidor para transformar en objetos JSON para interpretar				 lo
+			c. cors: una libreria para habilitar la peticion desde URL distintas 
+
+2. descargar el archivo .env
+		vercel env pull
+
+3. crear archivo vercel.json
