@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require("cors");
 
-const meals = require('./routes/meals');
+//const meals = require('./routes/meals');
 const app = express();
 
 //use:agregar pluginnes para a nuestro servidor de express para agregar funcionaludades
@@ -18,10 +18,14 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
+app.get('*', (req, res) => {
+  res.send('feliz')
+})
 
 
 
 
 
-app.use('/api/meals', meals);
+
+//app.use('/api/meals', meals);
 module.exports = app;
